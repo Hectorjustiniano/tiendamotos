@@ -1,0 +1,35 @@
+*{
+    margin: 3;
+    padding: 3;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: black;
+    color: rgb(240, 38, 38);
+  
+}
+img{
+    width: 120px;
+    height: 90px;
+    float: left;
+    padding: 10px;
+}
+header{
+    height: 20%;
+    text-align: center;
+    background-color: rgb(72, 164, 44);
+    align-self: flex;
+}
+/*color del titulo de link a redes sociales*/
+.titlePG{
+    color: rgb(125, 250, 0);
+    text-align: center;
+    float: none;
+}
+.anuncio{
+    width: 290px;
+    height: 380px;
+}
+
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Contactanos</title>
+
+    <!-- link a nuetsra libreria de Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!--codigo CSS -->
+    <style>
+        body {
+            background-image: url('Magi/headerFond.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #631919;
+            text-align: center;
+        }
+
+        .contact-container {
+            margin-top: 100px;
+            
+        }
+        .cajon{
+            background-color: rgb(8, 156, 156);
+        }
+        .card-header{
+            background-color: rgb(107, 204, 123);
+        }
+    </style>
+</head>
+<body>
+<!--esta parte crea un formulario de contacto responsivo y estilizado utilizando Bootstrap. 
+    La tarjeta (card) y las clases relacionadas de Bootstrap se utilizan para organizar y estilizar el contenido del formulario.-->
+<div class="container contact-container">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Contactanos</h3>
+                </div>
+                <div class="card-body">
+                    <form class="cajon">
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico:</label>
+                            <input type="email" class="form-control" id="email" placeholder="tucorreo@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea class="form-control" id="mensaje" rows="3" placeholder="Escribe tu mensaje aquí"></textarea>
+                        </div>
+                        <button href="https://mail.google.com/mail/u/0/?hl=es#inbox" type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and dependencies (popper.js and jQuery) aqui utilizamos lo mensionado al principio para darle un aspecto dinamico usando link-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>

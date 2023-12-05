@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>registro cliente</title>
+  <!-- Enlace al archivo CSS de Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!--aqui en vez de aser una codigo CSS aprte lo integramos 
+    en el codigo HTML por que es muy corto-->
+  <style>
+    body{
+      background-image: url('Magi/headerFond.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #1bd0d6;
+      text-align: center;
+    }
+    .btn-primary{
+      text-align: center;
+      
+    }
+    .card-title{
+      text-align: center;
+      color: rgb(238, 1, 1);
+    }
+    .card-body{
+      background-color: rgb(97, 110, 110);
+    }
+  </style>
+</head>
+<body>
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title">Información de Pago</h4><!--titula de nuestra caja-->
+        </div>
+        <div class="card-body">
+          <!-- datos del cliente -->
+          <form>
+            <div class="form-group">
+                <label for="correo" class="form-label">Correo</label>
+                <input type="email" class="form-control" id="correo" placeholder="@gmail.com">
+            </div>
+            <div class="form-group">
+                <label for="Password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="Password">
+            </div>
+            <div class="form-group">
+                <label for="ciudad" class="form-label">Ciudad</label>
+                <input type="text" class="form-control" id="ciudad">
+            </div>
+            <!-- esta parte crea un grupo de formulario para la seleccion de la provincia. 
+              Incluye una etiqueta de formulario, un menu de desplegable (<select>), y varias opciones dentro del menu desplegable-->
+            <div class="form-group">
+                <label for="Provincia" class="form-label">Provincia</label>
+                <select id="Provincia" class="form-select">
+                  <option selected>Riberalta</option>
+                  <option>Santa ana</option>
+                  <option>San borja</option>
+                  <option>Puerto sile</option>
+                  <option>Magdalena</option>
+                  <option>Ninguna</option>
+                </select>
+            </div>
+            <!-- Nombre en la Tarjeta -->
+            <div class="form-group">
+              <label for="nombre-tarjeta">Nombre en la Tarjeta</label>
+              <input type="text" class="form-control" id="nombre-tarjeta" placeholder="Ingrese el nombre en la tarjeta" required>
+            </div>
+
+            <!-- aqui nos pide el numero de la tarjeta -->
+            <div class="form-group">
+              <label for="numero-tarjeta">Número de Tarjeta</label>
+              <input type="text" class="form-control" id="numero-tarjeta" placeholder="Ingrese el número de tarjeta" required>
+            </div>
+
+            <!-- aqui nos pide la fecha de Vencimiento -->
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="fecha-vencimiento">Fecha de Vencimiento</label>
+                <input type="text" class="form-control" id="fecha-vencimiento" placeholder="MM/AA" required>
+              </div>
+              <!-- Codigo de Seguridad -->
+              <div class="form-group col-md-6">
+                <label for="codigo-seguridad">Código de Seguridad</label>
+                <input type="text" class="form-control" id="codigo-seguridad" placeholder="CVC" required>
+              </div>
+            </div>
+            <!-- Boton de Envio -->
+            <button type="submit" class="btn btn-primary">Pagar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Enlace al archivo JS de Bootstrap y a la biblioteca jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

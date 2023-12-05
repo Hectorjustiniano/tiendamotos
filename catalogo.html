@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>catalogo</title>
+    <!--aqui le damos estilo a nuetra pagina usando CSS en este caso lo usamos dentro del HTML-->
+    <style>
+        body {
+            background-color: #000000;
+        }
+
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .jumbotron {
+            background-color: #343a40;
+            color: #ffffff;
+        }
+
+        .card {
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .parrafo-formulario{
+          background-color: #60ce72;
+          font-size: 25px;
+          border: 5px solid #111;
+          margin: 25px;
+          padding: 12px;
+          
+        }
+        .inicio-sect{
+            text-align: center;
+            
+        }
+       
+    </style>
+</head>
+<body>
+    <!-- aqui en esta parte biene a ser nuestro titulo-->
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Bienvenido a la Venta de Motos</h1>
+        <p class="lead">Explora nuestro catálogo y encuentra la moto perfecta para ti.</p>
+    </div>
+    <!--carrusel como anuncioo, usamos lo que biene aser un codigo echo de nuestra conosida pagina que es bootstrap-->
+        <div id="carrusel" class="carousel carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carrusel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carrusel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carrusel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner" >
+              <div style="text-align: center;" class="carousel-item active">
+                <img src="Magi/F9.1.jpg" alt="mt">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 style="color: black;">DISFRUTA DE TUS MOTO</h5>
+                  <p style="color: black;">GOSA DE NUESTROS ANUNCIOS PAR QUE CONOSCAS MAS DE MOTOS</p>
+                </div>
+              </div>
+              <div style="text-align: center;" class="carousel-item">
+                <img src="Magi/F9.2.jpg" alt="mt">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 style="text-shadow: 2px 2px black;">DISFRUTA DE TUS MOTO</h5>
+                  <p style="text-shadow: 2px 2px black;">GOSA DE NUESTROS ANUNCIOS PAR QUE CONOSCAS MAS DE MOTOS</p>
+                </div>
+              </div>
+              <div style="text-align: center;" class="carousel-item">
+                <img src="Magi/F9.3.jpg" alt="mt">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>DISFRUTA DE TUS MOTO</h5>
+                  <p>GOSA DE NUESTROS ANUNCIOS PAR QUE CONOSCAS MAS DE MOTOS.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#careusel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+         <br>
+         <br>
+
+    <!--comiensa a lo quye es el catalogo Catalogo -->
+    <div class="container" id="catalogo">
+        <h2 class="text-center mb-4">Catálogo de Motos</h2>
+        <div class="row">
+            <!-- aqui agregamos una imagen una descripcion, asi para toda nuestras cajas de imagenes que lleva nuestro codigo-->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Magi/F1.jpg" class="card-img-top" alt="Moto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Motos de trabajo</h5>
+                        <p class="card-text">Trabaja con tu moto de marca BOXER</p>
+                        <a href="#" class="btn btn-primary">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Magi/F2.jpg" class="card-img-top" alt="Moto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Moto de trabajo</h5>
+                        <p class="card-text">Descrive tu mismo la pacion por la motos.</p>
+                        <a href="#" class="btn btn-primary">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Magi/F4.jpg" class="card-img-top" alt="Moto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Motos de tabajo</h5>
+                        <p class="card-text">Haojin moto echa para el tabajo</p>
+                        <a href="#" class="btn btn-primary">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Magi/F5.jpg" class="card-img-top" alt="Moto 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Moto deportiva</h5>
+                        <p class="card-text">Moto ruda ideal para ti, y gosar la vida</p>
+                        <a href="#" class="btn btn-primary">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Magi/F8.1.jpg" class="card-img-top" alt="Moto 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Moto biker</h5>
+                        <p class="card-text">Ideal para ti, gosa la velocida con tu moto sero kilometro</p>
+                        <a href="#" class="btn btn-primary">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Magi/F14.jpeg" class="card-img-top" alt="Moto 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Moto  Navi</h5>
+                        <p class="card-text">Buscas elegancia esta es la moto ideal para ti</p>
+                        <a href="#" class="btn btn-primary">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Magi/F12.4.jpeg" class="card-img-top" alt="Moto 7">
+                    <div class="card-body">
+                        <h5 class="card-title">Moto XRL Honda </h5>
+                        <p class="card-text">Disfruta de tus biajes y realiza el goso de la vida</p>
+                        <a href="#" class="btn btn-primary">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Magi/F7.3.jpg" class="card-img-top" alt="Moto 8">
+                    <div class="card-body">
+                        <h5 class="card-title">Moto deportiva</h5>
+                        <p class="card-text">Disfruta la elegancia y la velocidad</p>
+                        <a href="#" class="btn btn-primary">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Magi/F18.jpeg" class="card-img-top" alt="Moto 9">
+                    <div class="card-body">
+                        <h5 class="card-title">Moto tornado</h5>
+                        <p class="card-text">echa para ti y disfrutar todo terreno</p>
+                        <a  class="btn btn-primary">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+            <script>
+                // Agregamos un script para mostrar la lista de detalles al hacer clic en el botón "Ver Detalles"
+                $(document).ready(function(){
+                    $('.btn-detalles').click(function(){
+                        // Buscamos el contenedor de detalles más cercano en la jerarquía HTML
+                        var detallesContainer = $(this).closest('.card-body').find('.detalles-container');
+                        detallesContainer.slideToggle();
+                    });
+                });
+            </script>
+        </div>
+    </div>
+</body>
+
+
+    
